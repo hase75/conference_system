@@ -8,9 +8,9 @@ engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={'check_same_thread': False}
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-#SessionLocalでセッションを定義している
-#autocommit, sutoflushはコミットを自動でするかどうかの設定
-#bindはengineとセッションを結びつけている
+# SessionLocalでセッションを定義している
+# autocommit, sutoflushはコミットを自動でするかどうかの設定
+# bindはengineとセッションを結びつけている
 
 Base = declarative_base()
-#declarative_baseという既にあるクラスを使ってDBの構造を名義する必要がある
+# declarative_baseという既にあるクラスを使ってDBの構造を名義する必要がある
